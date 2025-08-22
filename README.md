@@ -1,37 +1,68 @@
-# FullStack Store Ratings
+# 📌 FullStack Store Ratings
 
-A full-stack web application for submitting and managing store ratings with role-based access control.
+A full-stack web application for submitting and managing store ratings with **role-based access control**.
 
-## Tech Stack
-- **Backend:** ExpressJs / Loopback / NestJs
-- **Frontend:** ReactJs
-- **Database:** PostgreSQL / MySQL
+---
 
-## Features
+## 🚀 Tech Stack
+- **Backend:** Express.js  
+- **Frontend:** React.js  
+- **Database:** PostgreSQL
 
-### User Roles
-1. **System Administrator**
-   - Add new stores, normal users, and admin users.
-   - Dashboard showing total users, stores, and ratings.
-   - View and filter lists of users and stores.
-   - Add new users with detailed information.
+---
 
-2. **Normal User**
-   - Sign up, log in, and update password.
-   - View and search registered stores.
-   - Submit and modify ratings (1-5) for stores.
+## ✨ Features
 
-3. **Store Owner**
-   - Log in and update password.
-   - View users who rated their store.
-   - See average store rating.
+### 👨‍💻 System Administrator
+- Add new stores, normal users, and admin users.  
+- Dashboard showing total users, stores, and ratings.  
+- View and filter lists of users and stores.  
+- Add new users with detailed information.  
 
-### Form Validations
-- **Name:** 20-60 characters
-- **Address:** Max 400 characters
-- **Password:** 8-16 characters, must include one uppercase letter and one special character
-- **Email:** Must follow standard email format
+### 👥 Normal User
+- Sign up, log in, and update password.  
+- View and search registered stores.  
+- Submit and modify ratings (1–5) for stores.  
 
-### Additional Notes
-- Tables support sorting (ascending/descending) for key fields.
-- Follows best practices for frontend, backend, and database design.
+### 🏪 Store Owner
+- Log in and update password.  
+- View users who rated their store.  
+- See average store rating.  
+
+---
+
+## 🏗️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://https://github.com/DkBattulaS/FullStack-Store-Ratings/.git
+cd rating-stores-app
+
+
+2️⃣ Backend Setup
+cd backend
+npm install
+npm run dev
+
+
+Configure database in .env file:
+
+DB_HOST=localhost
+DB_USER=your_username
+DB_PASS=your_password
+DB_NAME=store_ratings
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm start
+
+📂 Project Structure
+rating-stores-app/
+ ├── backend/        # Express/Nest backend API
+ ├── frontend/       # React frontend
+ ├── database/       # SQL schema / migrations
+ ├── README.md
+ └── .gitignore
+
+
